@@ -1,0 +1,46 @@
+.todoList {
+  .todo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 80px 10px 2px;
+
+    word-break: break-all;
+
+    .todoInner {
+      display: flex;
+      align-items: center;
+
+      input {
+        & + p {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .deleteBtn {
+      position: absolute;
+      right: 10px;
+      top: 18px;
+      color: #fff;
+      font-weight: bold;
+      background-color: #e73636;
+      min-width: 84px;
+      border: 0;
+      border-radius: 20px;
+      padding: 4px 10px;
+      transition: 0.2s;
+      outline: 0;
+
+      &:hover,
+      :active {
+        color: #ff470f;
+        background-color: rgb(255, 207, 193);
+      }
+    }
+
+    & + .todo {
+      margin-top: 20px;
+    }
+  }
+}

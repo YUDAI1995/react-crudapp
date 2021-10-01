@@ -1,0 +1,48 @@
+.todoForm {
+  position: relative;
+  margin: 40px 0 20px;
+
+  .todoInput {
+    width: calc(100% - 200px);
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    padding: 6px 10px;
+    outline: 0;
+
+    &:focus {
+      background-color: #fff6e4;
+      border: 1px solid #ffdf9e;
+      & + .inputLabel {
+        top: -24px;
+        color: #f8af26;
+        font-weight: bold;
+      }
+    }
+  }
+  .inputLabel {
+    color: #adadad;
+    font-size: 14px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transition: 0.4s;
+  }
+
+  .inputBtn {
+    color: #fff;
+    font-weight: bold;
+    width: 160px;
+    background-color: #f8af26;
+    border: 0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 40px;
+    transition: 0.2s;
+
+    &:hover,
+    :active {
+      color: #f8af26;
+      background-color: #ffdfa2;
+    }
+  }
+}
